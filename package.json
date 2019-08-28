@@ -8,7 +8,8 @@
     "deploy": "node -e 'require(\"./setup\").init()'",
     "curl": "curl https://megamillions.averyharnish.com/v1/api",
     "fmt": "eslint --fix ./src ./test ./setup.js",
-    "test": "npm run fmt && mocha --require babel-core/register \"./test/**/*.js\""
+    "test": "npm run fmt && mocha --require babel-core/register \"./test/**/*.js\"",
+    "postinstall": "mkdir target"
   },
   "author": "Avery Harnish",
   "license": "ISC",
@@ -17,16 +18,17 @@
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
     "dotenv": "^6.1.0",
     "eslint": "^5.0.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.1",
-    "form-data": "^2.3.3",
+    "form-data": "^2.5.0",
     "mocha": "^5.2.0",
-    "node-fetch": "^2.2.0",
-    "prettier": "^1.13.7",
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2",
     "uglifyjs-webpack-plugin": "^1.2.7",
-    "webpack": "^4.16.1",
-    "webpack-cli": "^3.0.8"
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
   }
 }
