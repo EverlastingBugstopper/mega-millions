@@ -12,7 +12,6 @@ let _checkRand = (rand, arr, low, high) => {
   if (rand <= low || rand >= high) {
     return false;
   }
-  console.log(arr.indexOf(rand) === -1);
   return arr.indexOf(rand) === -1;
 };
 

@@ -7,7 +7,7 @@ addEventListener("fetch", event => {
 
 async function handleRequest(request) {
   const lottoNums = await lottoGenerator();
-  if (request.url.endsWith("megamillions.averyharnish.com/v1/api")) {
+  if (request.url.endsWith("/v1/api")) {
     const data = { megaMillionNums: lottoFormatter(lottoNums) };
     const errors = [];
     const json = { data: data, errors: errors };
