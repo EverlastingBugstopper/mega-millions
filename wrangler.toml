@@ -1,4 +1,3 @@
 name = "mega-millions"
 type = "webpack"
-workers_dev = true
 route = "megamillions.averyharnish.com/*"
